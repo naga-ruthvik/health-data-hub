@@ -1,0 +1,35 @@
+{% extends 'host_templates/base.html' %}
+
+{% block content %}
+<div class="bg-light rounded-3 py-3 px-4 px-md-5 mb-5">
+<div class="text-center mb-5">
+    <div class="feature bg-gradient text-black rounded-3 mb-3 fa-5x"><i class="bi bi-cloud-arrow-up-fill" style="font-size: 40px;"></i></div>
+    <h2 class="fw-bolder mb-3">Upload Patient Files</h2>
+    <p class="lead fw-normal text-muted mb-0"></p>
+</div>
+<div class="row gx-5 justify-content-center">
+    <div class="col-lg-8 col-xl-6">
+        <form id="contactForm needs-validation" method="post" action="" enctype="multipart/form-data" novalidate>
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+                <input class="form-control" name="patient_id" id="patient_id" type="text" placeholder="Patient ID" data-sb-validations="required" />
+                <label for="patient_id">Patient ID</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A patient ID is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" name="appointment_number" id="name" type="text" placeholder="Appointment Number" data-sb-validations="required" />
+                <label for="appointment_number">Appointment Number</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+            </div>
+            <div class="form-floating mb-3">
+              <div>
+                <label for="formFileLg" class="form-label">Upload Patient File</label>
+                <input class="form-control form-control-lg" name="reports" id="formFileLg" type="file">
+              </div>
+            </div>
+              <div class="d-grid"><button type="submit" class="btn btn-primary">Submit</button></div>
+        </form>
+    </div>
+</div>
+</div>
+{% endblock %}

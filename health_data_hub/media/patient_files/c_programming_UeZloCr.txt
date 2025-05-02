@@ -1,0 +1,8 @@
+Data Types:
+1)assgignment operation is done from right to left
+  a=b=c=0
+  a=(b=(c=0)
+
+2)addition/sub operator is from left to right
+
+3)only binary operator,assignment operator is done from right to left

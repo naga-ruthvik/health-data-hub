@@ -1,0 +1,23 @@
+{% extends 'host_templates\base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row g-5 justify-content-start mt-3 mx-4">
+        {% for detail in app_det %}
+            <div class="col-md-3">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header">Hospital:{{detail.hospital}}</div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{detail.name}}</h5>
+                        <h5 class="card-title">{{detail.department}}</h5>
+                        <span>booked at</span>
+                        <p>{{detail.time}}</p>
+                    </div>
+                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

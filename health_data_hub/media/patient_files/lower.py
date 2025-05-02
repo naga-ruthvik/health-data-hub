@@ -1,0 +1,3 @@
+s="Hello"
+s=s.lower()
+print(s)

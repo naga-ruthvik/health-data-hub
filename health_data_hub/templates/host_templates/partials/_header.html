@@ -1,0 +1,36 @@
+
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="">Start Bootstrap</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="{% url 'host_home' %}">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="{% url 'uploadfiles' %}">Upload Files</a></li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Appointments</a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                    <li><a class="dropdown-item" href="{% url 'book_appointments' %}">Book</a></li>
+                                    <li><a class="dropdown-item" href="blog-post.html">My Appointments</a></li> -->
+                                
+                            
+                            <li class="nav-item"><a class="nav-link" href="{% url 'host_appointments' %}">Appointments</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li> -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i></a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Appointments</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Uploaded Files</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-overview.html">Notifications</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Settings</a></li>
+                                    <li><a class="dropdown-item" href="portfolio-item.html">Help & Support </a></li>
+                                    <li><a class="dropdown-item logout-item" href="portfolio-item.html">Log Out<i class="bi bi-box-arrow-right"></i></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>

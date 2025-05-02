@@ -1,0 +1,6 @@
+1)elastic search
+2)celleri
+3)rabbit MQ
+4)kafka
+5)dockerizing Django applications
+-----------------
