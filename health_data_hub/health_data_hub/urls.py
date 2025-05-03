@@ -33,6 +33,7 @@ from PatientAuthentication import views as PatAuthViews
 from HostHome import views as HostHomeViews
 from host_upload_files import views as UploadFileViews
 from SeeAppointments import views as HostAppointmentsViews
+from PatientAuthentication import views as PAuthViews
 # HOST VIEWS
 
 urlpatterns = [
@@ -47,10 +48,11 @@ urlpatterns = [
     path('',mainhomeview.main_home,name='main_page'),
     path('patientlogin',PatAuthViews.patient_log_home,name='patient_login_home'),
     path('patientlogin/signup',PatAuthViews.patient_signup,name='patient_signup'),
-    path('patientlogin/signin',PatAuthViews.patient_signin,name='patient_signin'),
     path('host/',HostHomeViews.host_home,name='host_home'),
     path('upload/',UploadFileViews.upload_files,name='uploadfiles'),
     path('hostappointments/',HostAppointmentsViews.see_appointments,name='host_appointments'),
+    path('patient-login/',PAuthViews.patient_log_home,name='patientlogin'),
+    path('host-login/',PAuthViews.host_login,name='hostlogin'),
     
 ]
 
